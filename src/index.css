@@ -1,13 +1,60 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-size: 18px;
+}
+
+body {
+  margin: 0;
+  font-family: Quicksand, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header a {
+  color: #af1313;
+}
+
+.header a:hover {
+  background: #e72929;
+  color: white;
+  cursor: pointer;
+}
+
+.header ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+}
+
+.header ul a {
+  padding: 1rem;
+  display: inline-block;
+}
+
+.menu_container:hover .menu {
+  display: block;
+}
+
+.menu a {
+  width: 100%;
+  min-width: 8rem;
+}
+
+.cart_count {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 0.1rem 0.45rem;
+  border-radius: 100rem;
+  font-size: 0.9rem;
 }
